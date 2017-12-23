@@ -1,2 +1,1 @@
-# Data-Visualization
-Frequently Used Plots in R 
+###### *Some frequently used Plots in R*

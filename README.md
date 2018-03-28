@@ -278,7 +278,8 @@ treemap(stadiums, index = c("Total_Centuries_in_Stadium","Ground","Player"),
 ------------------------------------------------------------------------
 
 ``` r
-Top_10_Players <- odi_data %>% group_by(Player) %>% summarise(TotalRuns = sum(Runs)) %>% arrange(desc(TotalRuns)) %>% head(10)
+Top_10_Players <- odi_data %>% group_by(Player) %>% summarise(TotalRuns = sum(Runs)) %>% 
+                  arrange(desc(TotalRuns)) %>% head(10)
 
 odi_data$"100's" <- as.numeric(odi_data$Runs > 99)
 

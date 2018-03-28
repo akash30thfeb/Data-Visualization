@@ -49,8 +49,7 @@ v_barchart <- v_barchart %>%
 
 v_barchart  
 ```
-
-![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![1](README/1.jpg)
 
 #### HORIZONTAL BARCHART
 
@@ -75,7 +74,7 @@ h_barchart <- h_barchart %>% ggplot(aes(reorder(NAME,perc_margin),perc_margin, f
 h_barchart  
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![2](README/2.jpg)
 
 #### STACKED BARCHART
 
@@ -101,7 +100,7 @@ stacked <- ggplot(stacked[order(stacked$Temp_Limit, decreasing = T),],
 stacked
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![3](README/3.jpg)
 
 #### DODGED BARCHART
 
@@ -123,7 +122,7 @@ dodged <- dodged %>% ggplot(aes(`day(date)`,count, fill=Temp_Limit)) +
 dodged
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![4](README/4.jpg)
 
 #### ABSOLUTE STACKED BARCHART
 
@@ -144,7 +143,7 @@ A2 <- ggplot(A2, aes(as.factor(YEAR),Gender_Division, fill = SEX)) + geom_col() 
 A2  
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![5](README/5.jpg)
 
 #### LINE CHART
 
@@ -163,7 +162,7 @@ linechart <- linechart %>% ggplot(aes(`day(date)`,Avg_Temp_per_Day)) +
 linechart  
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![6](README/6.jpg)
 
 #### HEAT MAP
 
@@ -185,7 +184,7 @@ heat_map <- ggplot(heat_map,aes(day,hour, fill = as.factor(Avg_Temp_per_day))) +
 heat_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![7](README/7.jpg)
 
 #### BOX PLOT
 
@@ -201,7 +200,7 @@ bplot <- iot_data %>% group_by(day(date)) %>% ggplot(aes(`day(date)`,temperature
 bplot  
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![8](README/8.jpg)
 
 #### SCATTERPLOT
 
@@ -217,7 +216,7 @@ scatter <- ggplot(tweets_data, aes(retweets_count,favorite_count, color = source
 scatter
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![9](README/9.jpg)
 
 #### ANIMATED SCATTERPLOT
 
@@ -248,7 +247,7 @@ plot <- ggplot(odi_subset, aes(Runs, ScoreRate, frame = YEAR,
 gganimate(plot, interval = 0.7)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-11-1.png)![](README_files/figure-markdown_github/unnamed-chunk-11-2.png)![](README_files/figure-markdown_github/unnamed-chunk-11-3.png)![](README_files/figure-markdown_github/unnamed-chunk-11-4.png)![](README_files/figure-markdown_github/unnamed-chunk-11-5.png)![](README_files/figure-markdown_github/unnamed-chunk-11-6.png)![](README_files/figure-markdown_github/unnamed-chunk-11-7.png)![](README_files/figure-markdown_github/unnamed-chunk-11-8.png)![](README_files/figure-markdown_github/unnamed-chunk-11-9.png)![](README_files/figure-markdown_github/unnamed-chunk-11-10.png)![](README_files/figure-markdown_github/unnamed-chunk-11-11.png)![](README_files/figure-markdown_github/unnamed-chunk-11-12.png)![](README_files/figure-markdown_github/unnamed-chunk-11-13.png)![](README_files/figure-markdown_github/unnamed-chunk-11-14.png)![](README_files/figure-markdown_github/unnamed-chunk-11-15.png)![](README_files/figure-markdown_github/unnamed-chunk-11-16.png)![](README_files/figure-markdown_github/unnamed-chunk-11-17.png)![](README_files/figure-markdown_github/unnamed-chunk-11-18.png)![](README_files/figure-markdown_github/unnamed-chunk-11-19.png)![](README_files/figure-markdown_github/unnamed-chunk-11-20.png)![](README_files/figure-markdown_github/unnamed-chunk-11-21.png)![](README_files/figure-markdown_github/unnamed-chunk-11-22.png)![](README_files/figure-markdown_github/unnamed-chunk-11-23.png)
+![10](README/10.gif)
 
 #### TREE MAP
 
@@ -272,7 +271,7 @@ treemap(stadiums, index = c("Total_Centuries_in_Stadium","Ground","Player"),
         title = "Stadiums with most number of ODI Centuries", palette = "Greens") 
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![11](README/11.jpg)
 
 #### FACET WRAP
 
@@ -295,7 +294,7 @@ f_wrap <- ggplot(Top_10_Players_data, aes(Year,Centuries, color = Player)) + geo
 f_wrap  
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![12](README/12.jpg)
 
 #### FACET GRID
 
@@ -315,4 +314,4 @@ f_grid <- ggplot(Top_5_Players_data, aes(Year,Centuries, color = Player)) + geom
 f_grid
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![13](README/13.jpg)
